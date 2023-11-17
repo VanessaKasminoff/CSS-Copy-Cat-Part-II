@@ -1,9 +1,49 @@
 /* all */
-* {
-    border: 1px solid red;
+body {
+    background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blta8f9a8e092360c6c/blteb3521249ab5f92e/61e765b0819be248ba63157d/2600_Featured_Games.jpg?format=webply&quality=80&auto=webp);
 }
 
-/* main */
+/* header & nav NOT FINISHED*/
+header {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(40, 45, 67, 0.8);
+    padding: 1em;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* slideshow NOT FINISHED */
+#slides-container {
+    overflow: hidden;
+    height: 800px;
+    width: 1000px;
+    margin: auto;
+}
+
+.slides-wrapper {
+    width: 2000px;
+    animation: slide 10s ease infinite;
+}
+
+.slides {
+    float: left;
+    height: 800px;
+    width: 1000px;
+}
+
+/* product grid */
 #product-container {
     display: flex;
     justify-content: center;
@@ -21,11 +61,24 @@
     margin-bottom: 2%;
 }
 
+.card-text {
+    color: white;
+}
 
-/* footer */
+.card-text h3 {
+    margin: 1%;
+}
+
+.card-text p {
+    color: #859ab0;
+    margin: 1.5%;
+}
+
+/* footer NOT FINISHED*/
 footer {
     display: flex;
     justify-content: center;
+    background-color: #171717;
 }
 
 .footer-content {
@@ -33,6 +86,16 @@ footer {
     flex-direction: column;
     width: 50%;
     text-align: center;
+    color: white;
+}
+
+.footer-list ul li {
+        display: inline;
+}
+
+.footer-list ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-content img {
@@ -40,7 +103,7 @@ footer {
     margin: auto;
 }
 
-/* img {
+.product-card img {
     width: 300px;
     height: 400px;
-} */
+}
